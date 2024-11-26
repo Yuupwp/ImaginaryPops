@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background: #d8d5d5 !important;
+}
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.navpropiedades{
+    background-color: rgba(0, 0, 0, 0.809);
+    color: white;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+/* PROPIEDADES PERSONALIZADAS BOOTSTRAP */
+
+/* Cambiar color de texto y fondo al hacer hover */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #3381ff; /* Color de texto al hacer hover */
+  }
+  
+  /* Cambiar color de texto al estar activo */
+  .navbar-nav .nav-item .nav-link.active {
+    color: #358ae4;
+  }
+  .navbar-nav .nav-item .nav-link:focus {
+    color: #358ae4;
+  }
+
+  .offcanvas.show .nav-link {
+    color: #000; /* Cambia a negro */
+  }
+  
+  /*SUBTITULOS OFFCANVA*/
+  /* Ocultar el subtítulo por defecto */
+.nav-subtitle {
+    display: none;
+  }
+  
+  /* Mostrar el subtítulo solo cuando el offcanvas está abierto */
+  .offcanvas.show .nav-subtitle {
+    display: block;
+    font-size: 0.8rem;  /* Tamaño de fuente más pequeño */
+    color: #555;        /* Color del texto (puedes cambiarlo) */
+    margin-top: -4px;   /* Espacio entre el texto principal y el subtítulo */
+  }
+  
+
+.login-btn{
+    background-color: #4e536d;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .5s background-color;
+    &:hover{
+        background-color: #8593ee;
+    }
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%); /* Blanco */
+  }
+
+  /*PAGINA*/
+
+.categorias{
+    background-color: #d8d5d5;
+    height: 100%;
+}
+
+.titulo-categorias{
+    padding: 15px;
+    justify-items: center;
+    background-color: white;
+}
+
+.cajas-categorias{
+    padding: 20px;
+}
+
+
+.productos-catalogo{
+    padding: 20px;
+    background-color: #ffffff;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        font-size: 16px; /* Tamaño del texto */
+        font-weight: bold;
+        margin: 0;
+        line-height: 1;
+    }
+}
+
+.btn-producto {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none; 
+    background-color: transparent;
+    color: black; 
+    cursor: pointer;
+  }
+
+
+  .col{
+    align-items: center;
+    justify-content: center;
+  }
+  
+.cajas-categorias .card{
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .5s;
+    &:hover{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px) scale(1.02);
+    }
+}
+

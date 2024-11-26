@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e1dfdf  !important;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+.header img {
+    height: 50px;
+}
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+.header .user-icon {
+    font-size: 24px;
+}
+
+.contenido{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.pedidos,
+.chats,
+.inventario,
+.gestionusuarios,
+.ventas
+{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.pedidos,.chats,.inventario{
+    height: 200px;
+}
+.gestionusuarios,.ventas{
+    height: 400px;
+}
+
+.gestionusuarios i {
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+}
+
+.hovcajas:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    transform: translateY(-10px);
+}
