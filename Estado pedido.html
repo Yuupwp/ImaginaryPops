@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/EstiEstPed.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="logo-and-title">
+            <img src="logo.png" alt="Logo" class="logo">
+            <span class="window-title">Pedidos</span>
+        </div>
+        <div class="user-dropdown">
+            <span class="user-icon" onclick="toggleDropdown()">👤</span>
+            <div class="dropdown-menu">
+                <a href="#">Perfil</a>
+                <a href="#">Configuraciones</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <li><a href="Estado pedido.html" class="active">Estado de Pedidos</a></li>
+                    <li><a href="chats AC.html">Chat</a></li>
+                    <li><a href="Inventario.html">Inventario</a></li>
+                    <li><a href="Usuario.html">Usuarios</a></li>
+                    <li><a href="ventas.html">Ventas</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="status-bar">
+                <h2>Estatus del pedido #000</h2>
+                <div class="status-flow">
+                    <div class="status-step">Pedido creado</div>
+                    <div class="status-line"></div>
+                    <div class="status-step">Pedido enviado</div>
+                    <div class="status-line"></div>
+                    <div class="status-step">Pedido entregado</div>
+                </div>
+            </div>
+
+            <section class="content">
+                <div class="status-bar">
+                    <div class="modify-status">
+                        <h3>Modificar estatus</h3>
+                        <button class="status-btn" onclick="changeStatus('Pedido creado')">Pedido creado</button>
+                        <button class="status-btn" onclick="changeStatus('Pedido enviado')">Pedido enviado</button>
+                        <button class="status-btn" onclick="changeStatus('Pedido entregado')">Pedido entregado</button>
+                        <textarea id="message" placeholder="Agregar detalles al estatus"></textarea>
+                        <button class="submit-btn" onclick="sendMessage()">Enviar</button>
+                    </div>
+                </div>
+
+                <div class="tracking-orders">
+                    <h3>Pedidos en seguimiento</h3>
+                    <ul class="orders-list" id="ordersList">
+                        <li data-id="0">
+                            <img src="producto1.jpg" alt="Producto 1">
+                            Pedido #000
+                            <p>ID del cliente: #112</p>
+                            <button class="select-order-btn" onclick="selectOrder(0)">Seleccionar</button>
+                        </li>
+                        <li data-id="1">
+                            <img src="producto2.jpg" alt="Producto 2">
+                            Pedido #001
+                            <p>ID del cliente: #113</p>
+                            <button class="select-order-btn" onclick="selectOrder(1)">Seleccionar</button>
+                        </li>
+                        <li data-id="2">
+                            <img src="producto3.jpg" alt="Producto 3">
+                            Pedido #002
+                            <p>ID del cliente: #114</p>
+                            <button class="select-order-btn" onclick="selectOrder(2)">Seleccionar</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        
+    <script src="js/estadoped.js" defer></script>
+</body>
+
+</html>

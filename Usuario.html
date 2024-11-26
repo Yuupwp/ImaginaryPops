@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="css/EstiloUsuario.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="logo-and-title">
+            <img src="logo.png" alt="Logo" class="logo">
+            <span class="window-title">Usuarios</span>
+        </div>
+        <div class="user-dropdown">
+            <span class="user-icon" onclick="toggleDropdown()">👤</span>
+            <div class="dropdown-menu">
+                <a href="#">Perfil</a>
+                <a href="#">Configuraciones</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <li><a href="chats AC.html">Chat</a></li>
+                    <li><a href="Inventario.html">Inventario</a></li>
+                    <li><a href="Usuario.html" class="active">Usuarios</a></li>
+                    <li><a href="ventas.html">Ventas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar usuario">
+            </div>
+
+            <section class="user-grid">
+                <div class="user-item">
+                    <div class="button-column">
+                        <h3>User#00001</h3>
+                        <button class="delete-user-btn">Eliminar usuario</button>
+                        <button class="send-message-btn">Enviar mensaje</button>
+                        <select>
+                            <option value="cliente">Cliente</option>
+                            <option value="administrador">Administrador</option>
+                        </select>
+                    </div>
+                    <div class="user-details">
+                        <img src="placeholder.png" alt="Usuario">
+                        <textarea class="message-box" placeholder="Escribe un mensaje aquí..."></textarea>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/Usuarios.js" defer></script>
+</body>
+
+</html>

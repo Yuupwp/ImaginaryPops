@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/EstiloPedidos.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="logo-and-title">
+            <img src="logo.png" alt="Logo" class="logo">
+            <span class="window-title">Pedidos</span>
+        </div>
+        <div class="user-dropdown">
+            <span class="user-icon" onclick="toggleDropdown()">👤</span>
+            <div class="dropdown-menu">
+                <a href="#">Perfil</a>
+                <a href="#">Configuraciones</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="pedidos.html" class="active">Pedidos</a></li>
+                    <li><a href="Estado pedido.html">Estado de Pedidos</a></li>
+                    <li><a href="chats AC.html">Chat</a></li>
+                    <li><a href="Inventario.html">Inventario</a></li>
+                    <li><a href="Usuario.html">Usuarios</a></li>
+                    <li><a href="ventas.html">Ventas</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="orders-table">
+                <div class="user-orders">
+                    <h2>Usuarios Pedidos</h2>
+                    <ul>
+                        <li class="active">Usuario #1</li>
+                        <li>Usuario #2</li>
+                        <li>Usuario #3</li>
+                    </ul>
+                </div>
+                <div class="order-details">
+                    <h2>Detalles del Pedido</h2>
+                    <div class="order-info">
+                        <img src="funko.jpg" alt="Funko Pop">
+                        <div class="order-title">Funko Pop: Spider-Man</div>
+                    </div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.
+                    </div>
+                    <div class="buttons">
+                        <button class="accept-btn">Aceptar Pedido</button>
+                        <button class="reject-btn">Rechazar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <script src="js/pedidos.js" defer></script
+</body>
+
+</html>
