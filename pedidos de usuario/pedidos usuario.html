@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pedidos usuario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Pedidos</title>
+</head>
+<body>
+    <div class="header">
+        <img alt="Imaginary Pops" height="50" src="" width="100"/>
+        <div class="right">
+            <span>(Nombre de cliente)</span>
+            <a href="configuracion cliente.html"><i class="fas fa-user user-icon"></i></a>
+            <a href="carrito"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="configuracion cliente.html">Mi cuenta (se puede cambiar)</a>
+            <br>
+            <a href="pedidos usuario.html">Pedidos</a>
+            <br>
+            <a href="configuracion cliente.html">Configuracion (se puede cambiar)</a>
+            <br>
+            <a href="#">Historial</a>
+        </div>
+        <div class="content">
+            <div class="status">
+                <h2>Status del pedido #000</h2>
+                <div class="steps">
+                    <div id="step1">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Pedido creado</p>
+                    </div>
+                    <div id="step2">
+                        <i class="fas fa-truck"></i>
+                        <p>Pedido enviado</p>
+                    </div>
+                    <div id="step3">
+                        <i class="fas fa-handshake"></i>
+                        <p>Pedido entregado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order-details">
+                <form action="pedidos de usuario.php" method="POST">
+                    <div class="left">
+                        <p><strong>Lunes 25 Sep</strong></p>
+                        <p>17:52 Pedido entregado, recibido por <input type="text" name="recibido_por" value="(nombre)"/></p>
+                        <p>12:20 Pedido en transito en direccion a tu domicilio</p>
+                        <p><strong>Viernes 22 Sep</strong></p>
+                        <p>15:00 Pedido empacado listo para enviar</p>
+                        <p><strong>Jueves 21 Sep</strong></p>
+                        <p>14:40 Orden creada</p>
+                        <div class="buttons">
+                            <button id="confirmDelivery" type="button">Confirmar entrega</button>
+                            <button id="notReceived" type="button">No recibí mi pedido</button>
+                            <button type="submit">Exportar verificación</button>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3>Pedidos</h3>
+                        <div class="order active" onclick="changeOrderStatus(0)">
+                            <p>Pedido #000</p>
+                            <p>Funko pop #13131</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                        <div class="order" onclick="changeOrderStatus(1)">
+                            <p>Pedido #001</p>
+                            <p>Funko pop #13131</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                        <div class="order" onclick="changeOrderStatus(2)">
+                            <p>Pedido #002</p>
+                            <p>Funko pop #13131</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="pedidos usuario.js"></script>
+</body>
+</html>

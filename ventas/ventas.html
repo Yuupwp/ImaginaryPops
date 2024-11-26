@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <link rel="stylesheet" href="ventas.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="header">
+        <img alt="Imaginary Pops" height="50" src="" width="50"/>
+        <h1>Ventas</h1>
+        <a href="panel admin.html"><i class="fas fa-user user-icon"></i></a> <!-- Ícono de usuario -->
+    </div>
+    <div class="sidebar">
+        <a href="panel admin.html">Panel de control</a>
+        <a href="#">Pedidos</a>
+        <a href="chats AC.html">Chats</a>
+        <a href="#">Inventario</a>
+        <a href="#">Usuarios</a>
+        <a href="ventas.html">Ventas</a>
+    </div>
+    <div class="content">
+        <div class="chart-container">
+            <h2>
+                Gráfico de:
+                <span style="color: #999;">Últimas 3 semanas</span>
+            </h2>
+            <h3>Ventas Semanales de Funkos</h3>
+            <img alt="Gráfico" height="400" src="331.jpg" width="600"/>
+        </div>
+        <div class="sales-filter">
+            <form id="salesForm">
+                <label for="startDate">Fecha de Inicio:</label>
+                <input type="date" id="startDate" required>
+                <label for="endDate">Fecha de Fin:</label>
+                <input type="date" id="endDate" required>
+                <button type="submit">Consultar Ventas</button>
+            </form>
+            <div id="sales-table">
+            </div>
+        </div>
+    </div>
+    <script src="ventas.js"></script>
+</body>
+</html>

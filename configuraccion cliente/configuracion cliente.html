@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="configuracion cliente.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>configuracion</title>
+</head>
+<body>
+    <div class="header">
+        <img alt="imaginary Pops" height="40" src="" width="100"/>
+        <h1>Configuracion</h1>
+    <div class="header">
+            <div class="right">
+                <i class="fas fa-shopping-cart">
+                </i>
+                <a href="pedidos">Carrito</a>
+                <a href="configuracion cliente.html"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+    </div>
+        <div class="breadcrumb">
+            Inicio &gt; mi cuenta
+        </div>
+            <div class="container">
+                <div class="sidebar">
+                <a href="configuracion cliente.html">
+                    Mi cuenta
+                </a>
+                <a href="pedidos usuario.html">
+                    Pedidos
+                </a>
+                <a href="#">
+                    Historial
+                </a>
+                </div>
+                <div class="content">
+                    <div class="profile-pic" id="profilePic">
+                     <img alt="Foto de perfil" height="100" id="profileImage" src="foto.jpg" width="100"/>
+                    </div>
+                    <input accept="image/*" class="file-input" id="fileInput" type="file"/>
+                    <button class="upload-btn" onclick="document.getElementById('fileInput').click();">
+                     Subir foto de perfil
+                    </button>
+                    <div class="profile-info">
+                     <p>
+                      lorem
+                     </p>
+                     <p>
+                      @gmail
+                     </p>
+                     <p>
+                      <a href="#">
+                       Editar contraseña
+                      </a>
+                     </p>
+                     <p>
+                      <a href="registro.html" style="color: red;" onclick="eliminarCuenta()">
+                       Eliminar cuenta
+                      </a>
+                     </p>
+                    </div>
+               </div>
+            </div>
+        <script src="configuracion cliente.js"></script>
+    </body>
+</html>
