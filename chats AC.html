@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats (Atención al Cliente)</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="AC.css">
+</head>
+<body>
+    <div class="header">
+        <img alt="Imaginary Pops" height="50" src="" width="50"/>
+        <h1>Chats (Atención al Cliente)</h1>
+        <a href="panel admin.html"><i class="fas fa-user user-icon"></i></a>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="panel admin.html">Panel de control</a></li>
+            <li>Pedidos</li>
+            <li class="active">Chats</li>
+            <li>Inventario</li>
+            <li>Usuarios</li>
+            <li><a href="ventas.html">Ventas</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="chat-container">
+            <div class="chat-sidebar">
+                <div class="client-id" onclick="selectClient(1)">Cliente 1</div>
+                <div class="client-id" onclick="selectClient(2)">Cliente 2</div>
+                <div class="client-id" onclick="selectClient(3)">Cliente 3</div>
+            </div>
+            <div class="chat-main">
+                <div class="chat-window" id="chatWindow">
+                    <!-- Mensajes aparecerán aquí -->
+                </div>
+                <div class="actions">
+                    <span><button onclick="markAsComplete()">Marcar como completo</button></span>
+                    <span><button onclick="markAsPending()">Marcar como pendiente</button></span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="messageInput" placeholder="Escribe tu respuesta...">
+                    <button onclick="sendMessage()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="chats AC.js"></script>
+</body>
+</html>
